@@ -194,7 +194,8 @@ namespace RNG
 
             handInfoPtr->combinedSeed = CalculateCombinedSeed(params.seedInfoList, params.seedInfoListSize);
             handInfoPtr->shuffledDeck = ShuffleDeck(handInfoPtr->initialDeck, handInfoPtr->combinedSeed);
-            handInfoPtr->cardVerifyInfoList.insert(handInfoPtr->cardVerifyInfoList.begin(), &params.cardsToVerifyList[0], &params.cardsToVerifyList[params.cardsToVerifyListSize]);
+            if (params.cardsToVerifyList)
+                handInfoPtr->cardVerifyInfoList.insert(handInfoPtr->cardVerifyInfoList.begin(), &params.cardsToVerifyList[0], &params.cardsToVerifyList[params.cardsToVerifyListSize]);
 
             // log
             LogFull(*handInfoPtr);

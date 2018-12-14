@@ -65,12 +65,12 @@ Validating poker hands is done in four steps:
 #### Build instructions:
 
 * ##### Windows Mingw (7.1):
-    >g++ -DSFMT_MEXP=19937 decentralized_rng_dll.cpp modules/sfmt.cpp modules/keccak.cpp -shared -fPIC -o PokerRNG.dll
+    >g++ -DSFMT_MEXP=19937 decentralized_rng_dll.cpp modules/sfmt.cpp modules/keccak.cpp -shared -fPIC -o PokerRNG_custom.dll
 
 
 * ##### Mac OS X clang:
 
-    >g++ -std=c++1z -DSFMT_MEXP=19937 decentralized_rng_dll.cpp modules/sfmt.cpp modules/keccak.cpp -shared -fPIC -o PokerRNG.dylib
+    >g++ -std=c++1z -DSFMT_MEXP=19937 decentralized_rng_dll.cpp modules/sfmt.cpp modules/keccak.cpp -shared -fPIC -o PokerRNG_custom.dylib
 
 Deck Shuffling - Knuth shuffle (a.k.a. the Fisher-Yates shuffle) algorithm with seed 32-bits length.  
 Hashing - Keccak-256 algorithm.

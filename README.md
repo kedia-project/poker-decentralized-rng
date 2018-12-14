@@ -72,7 +72,7 @@ Validating poker hands is done in four steps:
 
     >g++ -std=c++1z -DSFMT_MEXP=19937 decentralized_rng_dll.cpp modules/sfmt.cpp modules/keccak.cpp -shared -fPIC -o PokerRNG_custom.dylib
 
-NOTE: At first CoinPoker poker client will try to load PokerRNG_custom libarary, if it's not found - original PokerRNG library will be loaded.
+NOTE: At first CoinPoker poker client will try to load PokerRNG_custom library, if it's not found - original PokerRNG library will be loaded.
 
 Deck Shuffling - Knuth shuffle (a.k.a. the Fisher-Yates shuffle) algorithm with seed 32-bits length.  
 Hashing - Keccak-256 algorithm.

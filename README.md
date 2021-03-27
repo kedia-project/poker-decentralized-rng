@@ -1,4 +1,4 @@
-### Decentralized RNG library for [CoinPoker](https://coinpoker.com) client
+### Decentralized RNG library for [UltimatePoker](https://ultimate.poker) client
 
 #### Implementation details:
 
